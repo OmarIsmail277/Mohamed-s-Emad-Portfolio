@@ -1,3 +1,5 @@
+![snapShot](img/snapShot.JPG)
+
 # Mohamed Emad's Portfolio
 
 Welcome to the official repository of Mohamed Emad's portfolio. This collection features a range of projects that highlight his journey and the work he's passionate about. Each project represents a step in his growth and creativity.
