@@ -106,6 +106,12 @@ a:hover {
   width: fit-content;
 }
 
+@media (max-width: 768px) {
+  body > * {
+    padding-inline: 1.875rem;
+  }
+}
+
 .nav {
   position: fixed;
   z-index: 1000;
@@ -186,13 +192,6 @@ a:hover {
   flex-direction: column;
   font-size: 1.125rem;
 }
-@media (max-width: 1300px) {
-  .header__content {
-    font-size: 0.9375rem;
-    margin-top: 3rem;
-    align-items: center;
-  }
-}
 .header__content .header__title .header__welcome {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -202,13 +201,6 @@ a:hover {
   font-family: "Matemasie", sans-serif;
   font-size: 5.625rem;
   margin-top: -1.25rem;
-}
-@media (max-width: 1300px) {
-  .header__content .header__title .header__role {
-    font-size: 4.375rem;
-    margin-top: -0.625rem;
-    margin-bottom: 0.3125rem;
-  }
 }
 .header__content .header__title .header__role--back {
   color: #6700f2;
@@ -229,11 +221,6 @@ a:hover {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
-}
-@media (max-width: 1300px) {
-  .header__content .header__buttons {
-    justify-content: center;
-  }
 }
 .header__content .header__buttons .header__btn {
   padding: 1rem 1.5rem;
@@ -260,11 +247,6 @@ a:hover {
   margin-top: 1.5625rem;
   display: flex;
   gap: 1.25rem;
-}
-@media (max-width: 1300px) {
-  .header__content .header__social-links {
-    justify-content: center;
-  }
 }
 .header__content .header__social-links .social-link .img-link {
   height: 3.75rem;
@@ -309,6 +291,22 @@ a:hover {
     justify-content: center;
     text-align: center;
   }
+  .header .header__content {
+    font-size: 0.9375rem;
+    margin-top: 3rem;
+    align-items: center;
+  }
+  .header .header__content .header__title .header__role {
+    font-size: 4.375rem;
+    margin-top: -0.625rem;
+    margin-bottom: 0.3125rem;
+  }
+  .header .header__content .header__buttons {
+    justify-content: center;
+  }
+  .header .header__social-links {
+    justify-content: center;
+  }
 }
 @media (max-width: 1100px) {
   .header {
@@ -330,16 +328,16 @@ a:hover {
   }
 }
 @media (max-width: 650px) {
+  .header .header__content .header__info {
+    width: 100%;
+    font-size: 1.375rem;
+    margin-top: 1rem;
+  }
   .header .header__content .header__title .header__welcome {
     font-size: 1.875rem;
   }
   .header .header__content .header__title .header__role {
     font-size: 2.5rem;
-  }
-  .header .header__content .header__info {
-    width: 100%;
-    font-size: 1.375rem;
-    margin-top: 1rem;
   }
   .header .header__buttons {
     flex-direction: column;
@@ -438,6 +436,19 @@ a:hover {
   }
   .about-info {
     font-size: 0.9375rem;
+  }
+}
+@media (max-width: 600px) {
+  .about .about {
+    padding-block: 0.625rem;
+  }
+  .about .about-info {
+    padding: 2.1875rem;
+    font-size: 0.9375rem;
+  }
+  .about .about-info .resume-btn {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
   }
 }
 

@@ -1,5 +1,13 @@
 @import "./base.scss";
 
+body {
+  @media (max-width: 768px) {
+    & > * {
+      padding-inline: rem(30);
+    }
+  }
+}
+
 .nav {
   position: fixed;
   z-index: 1000;
@@ -85,26 +93,18 @@
     @extend %flex-justify-center;
     flex-direction: column;
     font-size: rem(18);
-    @media (max-width: 1300px) {
-      font-size: rem(15);
-      margin-top: 3rem;
-      align-items: center;
-    }
+
     .header__title {
       .header__welcome {
         font-family: "Raleway", sans-serif;
         font-weight: 400;
         letter-spacing: -2px;
       }
+
       .header__role {
         font-family: "Matemasie", sans-serif;
         font-size: rem(90);
         margin-top: rem(-20);
-        @media (max-width: 1300px) {
-          font-size: rem(70);
-          margin-top: rem(-10);
-          margin-bottom: rem(5);
-        }
 
         &--back {
           color: $primary-color;
@@ -131,9 +131,6 @@
       gap: rem(16);
 
       margin-top: rem(32);
-      @media (max-width: 1300px) {
-        justify-content: center;
-      }
 
       .header__btn {
         @extend %button_default_styling;
@@ -164,9 +161,7 @@
       margin-top: rem(25);
       display: flex;
       gap: rem(20);
-      @media (max-width: 1300px) {
-        justify-content: center;
-      }
+
       .social-link {
         @extend %flex-center;
         .img-link {
@@ -213,6 +208,28 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    .header__content {
+      font-size: rem(15);
+      margin-top: 3rem;
+      align-items: center;
+
+      .header__title {
+        .header__role {
+          font-size: rem(70);
+          margin-top: rem(-10);
+          margin-bottom: rem(5);
+        }
+      }
+
+      .header__buttons {
+        justify-content: center;
+      }
+    }
+
+    .header__social-links {
+      justify-content: center;
+    }
   }
 
   @media (max-width: 1100px) {
@@ -224,6 +241,7 @@
 
   @media (max-width: 768px) {
     padding-inline: rem(20);
+
     .header__content {
       margin-top: rem(70);
     }
@@ -233,17 +251,22 @@
   }
 
   @media (max-width: 650px) {
-    .header__content .header__title .header__welcome {
-      font-size: rem(30);
+    .header__content {
+      .header__info {
+        width: 100%;
+        font-size: rem(22);
+        margin-top: rem(16);
+      }
+      .header__title {
+        .header__welcome {
+          font-size: rem(30);
+        }
+        .header__role {
+          font-size: rem(40);
+        }
+      }
     }
-    .header__content .header__title .header__role {
-      font-size: rem(40);
-    }
-    .header__content .header__info {
-      width: 100%;
-      font-size: rem(22);
-      margin-top: rem(16);
-    }
+
     .header__buttons {
       flex-direction: column;
       gap: rem(10);
@@ -343,6 +366,21 @@
     padding-block: rem(30);
     &-info {
       font-size: rem(15);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .about {
+      padding-block: rem(10);
+      &-info {
+        padding: rem(35);
+        font-size: rem(15);
+
+        .resume-btn {
+          padding: rem(16) rem(24);
+          font-size: rem(16);
+        }
+      }
     }
   }
 }
