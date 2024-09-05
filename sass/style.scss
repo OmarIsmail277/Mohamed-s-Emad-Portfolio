@@ -590,6 +590,7 @@ body {
       .contact__linkedIn,
       .contact__facebook {
         text-decoration: underline;
+        font-size: rem(25);
         @media (max-width: 1300px) {
           font-size: rem(25);
         }
@@ -636,7 +637,14 @@ body {
     }
 
     .contact__email {
-      font-size: rem(24);
+      font-size: rem(20);
+    }
+
+    .contact__links {
+      .contact__linkedIn,
+      .contact__facebook {
+        font-size: rem(20);
+      }
     }
   }
 }

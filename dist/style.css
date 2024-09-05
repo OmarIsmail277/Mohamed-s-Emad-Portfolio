@@ -652,6 +652,7 @@ a:hover {
 .contact__form-container .contact__links .contact__linkedIn,
 .contact__form-container .contact__links .contact__facebook {
   text-decoration: underline;
+  font-size: 1.5625rem;
 }
 @media (max-width: 1300px) {
   .contact__form-container .contact__links .contact__linkedIn,
@@ -694,7 +695,11 @@ a:hover {
     font-size: 1.125rem;
   }
   .contact .contact__email {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .contact .contact__links .contact__linkedIn,
+  .contact .contact__links .contact__facebook {
+    font-size: 1.25rem;
   }
 }
 
