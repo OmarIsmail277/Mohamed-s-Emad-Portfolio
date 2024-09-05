@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
   background-color: $white;
   width: 100%;
-  height: calc(100vh - 95px); /* Subtract the navbar height */
+  height: calc(100vh - 100px); /* Subtract the navbar height */
   padding-inline: rem(100);
   background-image: url(../img/WaveLine.svg);
   background-size: cover;
