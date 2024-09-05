@@ -113,11 +113,6 @@ a:hover {
 }
 
 .nav {
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-  top: 0;
-  left: 0;
   justify-content: space-between;
   padding-block: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -152,6 +147,10 @@ a:hover {
 }
 .nav__menu .nav__item-link:hover {
   color: #6700f2;
+}
+.nav.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 @media (max-width: 1100px) {
   .nav {
@@ -293,7 +292,6 @@ a:hover {
   }
   .header .header__content {
     font-size: 0.9375rem;
-    margin-top: 3rem;
     align-items: center;
   }
   .header .header__content .header__title .header__role {
@@ -311,17 +309,12 @@ a:hover {
 @media (max-width: 1100px) {
   .header {
     padding-inline: 3.125rem;
-    height: auto;
     text-align: center;
-    margin-top: 2.5rem;
   }
 }
 @media (max-width: 768px) {
   .header {
     padding-inline: 1.25rem;
-  }
-  .header .header__content {
-    margin-top: 4.375rem;
   }
   .header .header__content .header__title .header__role {
     font-size: 3.75rem;
