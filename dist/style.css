@@ -180,7 +180,7 @@ a:hover {
   justify-content: space-between;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  height: calc(100vh - 100px); /* Subtract the navbar height */
+  height: calc(100vh - 120px); /* Subtract the navbar height */
   padding-inline: 6.25rem;
   background-image: url(../img/WaveLine.svg);
   background-size: cover;
@@ -355,11 +355,14 @@ a:hover {
     height: 1.875rem;
     width: 1.875rem;
   }
+  .header .header__image {
+    margin-top: 0.625rem;
+  }
   .header .header__image img {
     height: 10.9375rem;
     width: 10.9375rem;
     padding: 0.625rem;
-    margin-top: 1.25rem;
+    margin-top: 0.625rem;
   }
 }
 

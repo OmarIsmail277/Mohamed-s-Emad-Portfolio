@@ -83,13 +83,12 @@ body {
   justify-content: space-between;
   background-color: $white;
   width: 100%;
-  height: calc(100vh - 100px); /* Subtract the navbar height */
+  height: calc(100vh - 120px); /* Subtract the navbar height */
   padding-inline: rem(100);
   background-image: url(../img/WaveLine.svg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-
   &__content {
     @extend %flex-justify-center;
     flex-direction: column;
@@ -292,11 +291,14 @@ body {
         width: rem(30);
       }
     }
-    .header__image img {
-      height: rem(175);
-      width: rem(175);
-      padding: rem(10);
-      margin-top: rem(20);
+    .header__image {
+      margin-top: rem(10);
+      img {
+        height: rem(175);
+        width: rem(175);
+        padding: rem(10);
+        margin-top: rem(10);
+      }
     }
   }
 }
