@@ -67,13 +67,13 @@ body {
     justify-content: center;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
     padding-block: rem(8);
     &__title {
-      font-size: rem(24);
+      font-size: rem(20);
     }
     &__menu .nav__item-link {
-      font-size: rem(16);
+      font-size: rem(14);
     }
   }
 }
@@ -254,15 +254,15 @@ body {
     .header__content {
       .header__info {
         width: 100%;
-        font-size: rem(22);
+        font-size: rem(16);
         margin-top: rem(16);
       }
       .header__title {
         .header__welcome {
-          font-size: rem(30);
+          font-size: rem(25);
         }
         .header__role {
-          font-size: rem(40);
+          font-size: rem(35);
         }
       }
     }
@@ -273,8 +273,8 @@ body {
       margin-top: rem(12);
       margin-bottom: rem(10);
       .header__btn {
-        padding: rem(12) rem(20);
-        font-size: rem(20);
+        padding: rem(10) rem(16);
+        font-size: rem(16);
         font-weight: bold;
         &:hover {
           transform: translateY(-2px);
@@ -285,18 +285,21 @@ body {
     }
 
     .header__social-links {
-      gap: rem(40);
+      margin-top: rem(15);
+      gap: rem(12);
       .social-link {
-        height: rem(30);
-        width: rem(30);
+        .img-link {
+          height: rem(45);
+          width: rem(45);
+        }
       }
     }
     .header__image {
       margin-top: rem(10);
       img {
-        height: rem(175);
-        width: rem(175);
-        padding: rem(10);
+        height: rem(150);
+        width: rem(150);
+        padding: rem(9);
         margin-top: rem(10);
       }
     }
@@ -689,17 +692,22 @@ body {
     }
   }
 
-  .copyright {
-    a {
-      color: $primary-color;
-      font-family: "Raleway", sans-serif;
-      font-weight: bold;
-      font-size: rem(20);
-      transition: all 0.3s;
-      display: inline-block;
-      &:hover {
-        text-decoration: underline;
-        transform: scale(1.01) translateY(rem(-3));
+  .footer__copyright {
+    .footer__created,
+    .footer__inspired {
+      display: block;
+      .footer__created-link,
+      .footer__inspired-link {
+        color: $primary-color;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: rem(20);
+        transition: all 0.3s;
+        display: inline-block;
+        &:hover {
+          text-decoration: underline;
+          transform: scale(1.01) translateY(rem(-3));
+        }
       }
     }
   }
@@ -713,12 +721,12 @@ body {
         width: rem(30);
       }
     }
-    .copyright {
+    .footer__copyright {
       a {
-        font-size: rem(18);
+        font-size: rem(16);
       }
-      .citation {
-        font-size: rem(18);
+      .footer__citation {
+        font-size: rem(16);
       }
     }
   }
