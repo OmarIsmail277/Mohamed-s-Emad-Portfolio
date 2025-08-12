@@ -63,7 +63,7 @@ a:hover {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #bdbec1, #d100a2);
+  background: linear-gradient(to bottom, rgb(189.3, 189.9, 192.6), rgb(209.4, 0, 161.5));
 }
 
 .footer, .cards .card__wrapper .card__image-wrapper .card__image, .cards .card__wrapper .card__image-wrapper, .about, .header__content .header__social-links .social-link {
@@ -449,6 +449,65 @@ a:hover {
   }
 }
 
+.experience {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 3rem;
+}
+.experience__title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  border-bottom: 3px solid #00a884;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+.experience__item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.experience__item:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.experience__role {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
+.experience__role .experience__date {
+  font-size: 0.95rem;
+  color: #777;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+.experience__company {
+  font-weight: 500;
+  color: #555;
+  margin: 0.3rem 0 1rem;
+}
+.experience__company .experience__location {
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.experience__details {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.experience__details li {
+  margin-bottom: 0.5rem;
+  color: #444;
+  line-height: 1.5;
+}
+
 .cards {
   padding-block: 4.6875rem;
   text-align: center;
@@ -463,6 +522,8 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
   justify-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   row-gap: 3.5rem;
 }
 .cards .card__wrapper .card__link:hover .card__image {

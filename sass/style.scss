@@ -391,6 +391,74 @@ body {
   }
 }
 
+.experience {
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 3rem;
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #222;
+    border-bottom: 3px solid #00a884;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+  }
+
+  &__role {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+
+    .experience__date {
+      font-size: 0.95rem;
+      color: #777;
+      font-weight: normal;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__company {
+    font-weight: 500;
+    color: #555;
+    margin: 0.3rem 0 1rem;
+
+    .experience__location {
+      color: #999;
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  &__details {
+    list-style: disc;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      color: #444;
+      line-height: 1.5;
+    }
+  }
+}
+
 .cards {
   padding-block: rem(75);
   text-align: center;
@@ -405,6 +473,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(rem(350), 1fr));
     justify-items: center;
+    column-gap: 1rem;
     row-gap: rem(56);
 
     .card__link {
