@@ -59,12 +59,12 @@ body {
 
   @media (max-width: 1100px) {
     padding-block: rem(12);
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (max-width: 768px) {
     padding-block: rem(10);
-    flex-direction: column;
-    justify-content: center;
   }
 
   @media (max-width: 650px) {
@@ -197,6 +197,9 @@ body {
         height: rem(350);
         width: rem(350);
         padding: rem(32);
+      }
+      @media (max-width: 1100px) {
+        display: none;
       }
       &:hover {
         transform: scale(1.05);
@@ -541,6 +544,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: rem(30);
+    justify-content: center; // ✅ keeps cards centered when they wrap
   }
 
   .card__single {
@@ -553,18 +557,16 @@ body {
     text-align: left;
     border: 1px solid transparent;
     display: flex;
-    flex-direction: column; // ✅ allows pushing button to bottom
-    justify-content: space-between; // ✅ makes footer stick to bottom
+    flex-direction: column;
+    justify-content: space-between;
 
     &:hover {
       border-color: $primary-color;
       background-color: $quaternary-color;
       transform: translateY(-5px);
 
-      .card__header {
-        .card__name {
-          color: $white;
-        }
+      .card__header .card__name {
+        color: $white;
       }
 
       .card__overview {
@@ -573,17 +575,10 @@ body {
     }
   }
 
-  .card__link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    height: 100%; // ✅ ensure link covers full card height
-  }
-
   .card__content {
     display: flex;
     flex-direction: column;
-    height: 100%; // ✅ full height to distribute space
+    height: 100%;
   }
 
   .card__header {
@@ -610,11 +605,11 @@ body {
     line-height: 1.6;
     color: darken($secondary-color, 15%);
     margin-bottom: rem(10);
-    flex-grow: 1; // ✅ pushes buttons down if text is short
+    flex-grow: 1;
   }
 
   .card__links {
-    margin-top: auto; // ✅ keeps buttons pinned to bottom
+    margin-top: auto;
     display: flex;
     gap: rem(10);
     flex-wrap: wrap;
@@ -639,6 +634,49 @@ body {
         &:hover {
           background-color: darken(#00b16a, 10%);
         }
+      }
+    }
+  }
+
+  // 🌐 Responsive
+  @media (max-width: 1024px) {
+    .card__single {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card__wrapper {
+      justify-content: center;
+    }
+
+    .card__single {
+      width: 90%; // ✅ almost full width on tablets
+      max-width: rem(500);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card__title {
+      font-size: rem(32);
+    }
+
+    .card__single {
+      width: 100%; // ✅ full width on small screens
+      padding: rem(20);
+    }
+
+    .card__header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .card__icon {
+        width: rem(50);
+        height: rem(50);
+      }
+
+      .card__name {
+        font-size: rem(22);
       }
     }
   }
