@@ -170,6 +170,14 @@ a:hover {
     font-size: 0.875rem;
   }
 }
+@media (max-width: 520px) {
+  .nav__title {
+    font-size: 0.875rem;
+  }
+  .nav__menu .nav__item-link {
+    font-size: 0.625rem;
+  }
+}
 
 .header {
   justify-content: space-between;
@@ -323,14 +331,15 @@ a:hover {
 @media (max-width: 650px) {
   .header .header__content .header__info {
     width: 100%;
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 0.875rem;
+    margin-top: 0.875rem;
   }
   .header .header__content .header__title .header__welcome {
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
   }
   .header .header__content .header__title .header__role {
-    font-size: 2.1875rem;
+    margin-top: 0.25rem;
+    font-size: 1.875rem;
   }
   .header .header__buttons {
     flex-direction: column;
@@ -340,7 +349,7 @@ a:hover {
   }
   .header .header__buttons .header__btn {
     padding: 0.625rem 1rem;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: bold;
   }
   .header .header__buttons .header__btn:hover {
@@ -353,8 +362,8 @@ a:hover {
     gap: 0.75rem;
   }
   .header .header__social-links .social-link .img-link {
-    height: 2.8125rem;
-    width: 2.8125rem;
+    height: 2.1875rem;
+    width: 2.1875rem;
   }
   .header .header__image {
     margin-top: 0.625rem;

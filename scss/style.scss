@@ -76,6 +76,15 @@ body {
       font-size: rem(14);
     }
   }
+
+  @media (max-width: 520px) {
+    &__title {
+      font-size: rem(14);
+    }
+    &__menu .nav__item-link {
+      font-size: rem(10);
+    }
+  }
 }
 
 .header {
@@ -257,15 +266,16 @@ body {
     .header__content {
       .header__info {
         width: 100%;
-        font-size: rem(16);
-        margin-top: rem(16);
+        font-size: rem(14);
+        margin-top: rem(14);
       }
       .header__title {
         .header__welcome {
-          font-size: rem(25);
+          font-size: rem(20);
         }
         .header__role {
-          font-size: rem(35);
+          margin-top: 0.25rem;
+          font-size: rem(30);
         }
       }
     }
@@ -277,7 +287,7 @@ body {
       margin-bottom: rem(10);
       .header__btn {
         padding: rem(10) rem(16);
-        font-size: rem(16);
+        font-size: rem(12);
         font-weight: bold;
         &:hover {
           transform: translateY(-2px);
@@ -292,8 +302,8 @@ body {
       gap: rem(12);
       .social-link {
         .img-link {
-          height: rem(45);
-          width: rem(45);
+          height: rem(35);
+          width: rem(35);
         }
       }
     }
