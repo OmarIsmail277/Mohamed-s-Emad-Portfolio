@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>MohamedEmad's Portfolio</title>
   </head>
   <body>
@@ -316,66 +316,186 @@
 
     <section id="projects" class="cards projects__cards">
       <h2 class="card__title">My Projects</h2>
+
       <div class="card__wrapper">
-        <a
-          class="card__link"
-          href="https://github.com/omda1516/hosptial-Omda"
-          target="_blank"
-        >
-          <figure class="card__image-wrapper">
-            <img
-              class="card__image"
-              src="./img/hospital-svgrepo-com.svg"
-              alt="Hospital System Project"
-            />
-            <div class="card__name">Hospital System</div>
-          </figure>
-        </a>
-        <a class="card__link" href="#" target="_blank">
-          <figure class="card__image-wrapper">
-            <img
-              class="card__image"
-              src="./img/tawseela.png"
-              alt="E-Learning System Project"
-            />
-            <div class="card__name">
-              Tawseela System -
-              <span style="font-size: 16px; display: block"
-                >Private Repo - live production</span
-              >
+        <!-- Hospital Management System -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Hospital Management System</h3>
+              <img
+                src="./img/hospital-svgrepo-com.svg"
+                alt="Hospital Icon"
+                class="card__icon"
+              />
             </div>
-          </figure>
-        </a>
-        <a class="card__link" href="#">
-          <figure class="card__image-wrapper">
-            <img
-              class="card__image"
-              src="./img/cart.svg"
-              alt="E-Commerce System Project"
-            />
-            <div class="card__name">
-              E-Commerce System
-              <span style="font-size: 16px; display: block"
-                >Private Repo - live production</span
+
+            <p class="card__overview">
+              A Django-based hospital management system that handles patients,
+              doctors, and appointments efficiently with clean architecture and
+              role-based access.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/emad1711/hosptial-Managment-System"
+                target="_blank"
+                class="card__btn"
               >
+                🔗 GitHub Repo
+              </a>
             </div>
-          </figure>
-        </a>
-        <a class="card__link" href="#">
-          <figure class="card__image-wrapper">
-            <img
-              class="card__image"
-              src="./img/learning-school-svgrepo-com.svg"
-              alt="E-Learning System Project"
-            />
-            <div class="card__name">
-              E-Learning System
-              <span style="font-size: 16px; display: block"
-                >Private Repo - live production</span
+          </div>
+        </div>
+
+        <!-- Employee Management System -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Employee Management System</h3>
+              <img
+                src="./img/employee-id-svgrepo-com.svg"
+                alt="Employee Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <p class="card__overview">
+              A RESTful API built with Django and DRF for managing users,
+              companies, departments, and employees. Includes authentication,
+              Swagger docs, and role-based access.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/emad1711/Employee-Management"
+                target="_blank"
+                class="card__btn"
               >
+                🔗 GitHub Repo
+              </a>
             </div>
-          </figure>
-        </a>
+          </div>
+        </div>
+
+        <!-- Student Management System -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Student Management System</h3>
+              <img
+                src="./img/student-svgrepo-com.svg"
+                alt="E-Learning Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <p class="card__overview">
+              A student management system built using Django for managing
+              courses, students, and results. Provides a smooth experience for
+              admins and teachers.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/emad1711/student_management_system"
+                target="_blank"
+                class="card__btn"
+              >
+                🔗 GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dwar Market -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Dwar Market Modern Ecommerce Web App</h3>
+              <img
+                src="./img/ecommerce-website-commerce-and-shopping-2-svgrepo-com.svg"
+                alt="Market Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <p class="card__overview">
+              A modern e-commerce web app for managing products, users, and
+              categories. Includes secure authentication and admin product
+              control.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/emad1711/dwarmarket"
+                target="_blank"
+                class="card__btn"
+              >
+                🔗 GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle Service -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Vehicle Service Management</h3>
+              <img
+                src="./img/vehicle-svgrepo-com.svg"
+                alt="Vehicle Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <p class="card__overview">
+              A Django-based system for managing vehicle services, customers,
+              and appointments with admin dashboards and tracking capabilities.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://github.com/emad1711/vehicle_service"
+                target="_blank"
+                class="card__btn"
+              >
+                🔗 GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tawseela App -->
+        <div class="card__single">
+          <div class="card__content">
+            <div class="card__header">
+              <h3 class="card__name">Tawseela</h3>
+              <img
+                src="./img/tawseela.jpg"
+                alt="Tawseela Icon"
+                class="card__icon"
+              />
+            </div>
+
+            <p class="card__overview">
+              An all-in-one shopping and delivery app offering groceries, food,
+              and essentials — built with Django, FastAPI, and Flutter for a
+              seamless experience.
+            </p>
+
+            <div class="card__links">
+              <a
+                href="https://drive.google.com/file/d/1FvT5JqfmDLCI2BOFqm0IQ1JDFM8MmHqX/view?usp=drivesdk"
+                target="_blank"
+                class="card__btn card__btn--demo"
+              >
+                ▶ &nbsp; Demo Video
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
